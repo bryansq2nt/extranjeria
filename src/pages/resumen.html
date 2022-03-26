@@ -1,0 +1,134 @@
+---
+layout: sidebar-block-curved-colored
+title: Resumen
+---
+
+{{> layouts-mobile-subsidebar}}
+<!-- Content Wrapper -->
+<div  class="view-wrapper view-wrapper-full" data-mobile-item="#home-sidebar-menu-mobile" data-sidebar-open>
+
+    <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+
+            <div class="page-title has-text-centered">
+                <!-- Sidebar Trigger -->
+                <div class="huro-hamburger nav-trigger push-block" data-sidebar="sidebar-block">
+                    <span class="menu-toggle has-chevron">
+                        <span class="icon-box-toggle">
+                            <span class="rotate">
+                                <i class="icon-line-top"></i>
+                                <i class="icon-line-center"></i>
+                                <i class="icon-line-bottom"></i>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="title-wrap">
+                    <h1 class="title is-4">Dashboard</h1>
+                </div>
+
+                {{> toolbar}}
+            </div>
+
+            <div class="page-content-inner">
+
+                <!--Personal Dashboard V1-->
+                <div class="personal-dashboard personal-dashboard-v1">
+
+                    <!--Header-->
+                    <div class="dashboard-header">
+                        <div class="h-avatar is-large">
+                            <img class="avatar" src="https://via.placeholder.com/150x150"
+                                data-demo-src="assets/img/avatars/photos/8.jpg" alt="">
+                        </div>
+                        <div class="start">
+                            <h3>Bienvenido </h3>
+                            <p>aqui te dejo un resumen.</p>
+                        </div>
+                        <div class="end">
+                            <button class="button h-button is-primary is-elevated">Ver Reportes</button>
+                        </div>
+                    </div>
+
+                    <!--Body-->
+                    <div class="dashboard-body">
+                        <div class="columns is-multiline">
+
+                            <!--Card-->
+                            <div class="column is-6">
+                                <div class="dashboard-card">
+                                    <h4 class="dark-inverted">Estadisticas</h4>
+
+                                    <div class="quick-stats">
+                                        <div class="quick-stats-inner">
+                                            <!--Stat-->
+                                            <div class="quick-stat">
+                                                <div class="media-flex-center">
+                                                    <div class="h-icon is-purple is-rounded">
+                                                        <i class="lnil lnil-archive"></i>
+                                                    </div>
+                                                    <div class="flex-meta">
+                                                        <span>3,456,512</span>
+                                                        <span>Registros totales</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Stat-->
+                                            <div class="quick-stat">
+                                                <div class="media-flex-center">
+                                                    <div class="h-icon is-orange is-rounded">
+                                                        <i class="lnil lnil-scan"></i>
+                                                    </div>
+                                                    <div class="flex-meta">
+                                                        <span>131</span>
+                                                        <span>Documentos escaneados</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Stat-->
+                                            <div class="quick-stat">
+                                                <div class="media-flex-center">
+                                                    <div class="h-icon is-green is-rounded">
+                                                        <i class="lnil lnil-report-laptop"></i>
+                                                    </div>
+                                                    <div class="flex-meta">
+                                                        <span>756</span>
+                                                        <span>Reportes solicitados</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--Stat-->
+                                            <div class="quick-stat">
+                                                <div class="media-flex-center">
+                                                    <div class="h-icon is-info is-rounded">
+                                                        <i class="lnil lnil-search"></i>
+                                                    </div>
+                                                    <div class="flex-meta">
+                                                        <span>2,542,312</span>
+                                                        <span>Busquedas totales</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Card-->
+                            <div class="column is-6">
+                                <div class="dashboard-card">
+                                    <div id="customers-chart"></div>
+                                </div>
+                            </div>
+
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
