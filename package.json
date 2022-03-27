@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build",
     "start": "gulp dev",
-    "poststart": "npm prune --production"
+    "build": "babel-node tools/build.js && npm run open:dist",
+    "heroku-prebuild": "",
+    "heroku-postbuild": "babel-node tools/build.js"
   },
   "author": "Css Ninja",
   "license": "MIT",
