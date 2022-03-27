@@ -1,0 +1,159 @@
+---
+layout: sidebar-block-curved-colored
+title: Búsqueda
+---
+
+{{> layouts-mobile-subsidebar}}
+
+
+<!-- Content Wrapper -->
+<div  class="view-wrapper view-wrapper-full" data-mobile-item="#home-sidebar-menu-mobile" data-sidebar-open>
+
+    <div class="page-content-wrapper">
+        <div class="page-content is-relative">
+
+            <div class="page-title has-text-centered">
+                <!-- Sidebar Trigger -->
+                <div class="huro-hamburger nav-trigger push-block" data-sidebar="sidebar-block">
+                    <span class="menu-toggle has-chevron">
+                        <span class="icon-box-toggle">
+                            <span class="rotate">
+                                <i class="icon-line-top"></i>
+                                <i class="icon-line-center"></i>
+                                <i class="icon-line-bottom"></i>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="title-wrap">
+                    <h1 class="title is-4">Buscar 
+                    </h1>
+                   
+                </div>
+
+                {{> toolbar}}
+            </div>
+
+            <div class="page-content-inner">
+
+               
+    
+                <div class="page-content-inner is-webapp">
+    
+                
+                    <!-- Datatable -->
+                    <div class="table-wrapper" data-simplebar>
+                        
+                        <table id="empty-datatable" class="table is-datatable is-hoverable table-is-bordered">                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Departamento</th>
+                                    <th>Municipio</th>
+                                    <th>Fecha de ingreso</th>
+                                    <th><a href="/new-person.html"><i aria-hidden="true" class="fas fa-plus is-weight-800" style="color: white;"></i></a></th>
+                                </tr>
+                                <tr class="datatable-filter-line">
+                                   
+                                    <td class="datatable-filter-cell">
+                                        <div class="control has-icon">
+                                            <input type="text" placeholder="Escribe para filtrar... " class="datatable-filter datatable-input-text input" data-filter="name">
+                                            </div>
+                                    </td>
+                                    <td class="datatable-filter-cell">
+                                        <div class="control has-icon">
+                                            <div class="field">
+                                                <div class="control">
+                                                    <div class="select">
+                                                        <select>
+                                                            <option selected="">Seleccionar</option>
+                                                            <option>United States</option>
+                                                            <option>Canada</option>
+                                                            <option>France</option>
+                                                            <option>Germany</option>
+                                                            <option>Spain</option>
+                                                            <option>United Kingdom</option>
+                                                        </select>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="datatable-filter-cell">
+                                        <div class="control has-icon">
+                                            <div class="field">
+                                                <div class="controlt">
+                                                    <div class="select">
+                                                        <select>
+                                                            <option selected="">Seleccionar</option>
+                                                            <option>United States</option>
+                                                            <option>Canada</option>
+                                                            <option>France</option>
+                                                            <option>Germany</option>
+                                                            <option>Spain</option>
+                                                            <option>United Kingdom</option>
+                                                        </select>
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="datatable-filter-cell">
+                                        <div class="control has-icon">
+                                            <input type="date"  class="datatable-filter datatable-input-text input" data-filter="date" style="color: white;">
+                                        </div>
+                                    </td>
+                                
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+    
+                        <!--Empty Placeholder-->
+                        <div class="section-placeholder">
+                            <div class="placeholder-content">
+                                <img class="light-image" src="assets/img/illustrations/placeholders/search-6.svg" alt="" />
+                                <img class="dark-image" src="assets/img/illustrations/placeholders/search-6-dark.svg" alt="" />
+                                <h3 class="dark-inverted">Filtre la información para un mejor resultado.</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="form-layout is-split mt-5 mb-5">
+                        <div class="form-outer">
+                            <div class="form-header stuck-header">
+                                <div class="form-header-inner">
+                                  
+                                <button id="save-button" class="button h-button is-primary is-raised is-weight-600">Busqueda</button>
+                               
+                                <a href="/search-found.html"
+                                class="button h-button is-light is-dark-outlined">
+                                
+                                <span>Con resultados</span>
+                            </a>
+                            <a href="/search-not-found.html"
+                            class="button h-button is-light is-dark-outlined">
+                            <span>Sin resultados</span>
+                        </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="paging-first-datatable" class="pagination datatable-pagination">
+                        <div class="datatable-info">
+                            <span></span>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

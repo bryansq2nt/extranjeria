@@ -1,6 +1,6 @@
 ---
 layout: sidebar-block-curved-colored
-title: Edit profile
+title: Registro
 ---
 
 {{> layouts-mobile-subsidebar}}
@@ -56,28 +56,28 @@ title: Edit profile
                                 <div class="account-menu">
                                     <a href="/admin-profile-edit-1.html" class="account-menu-item">
                                         <i class="lnil lnil-file-name"></i>
-                                        <span>Ver Documento 1</span>
+                                        <span>Primer Documento</span>
                                         <span class="end">
                                             <i aria-hidden="true" class="fas fa-arrow-right"></i>
                                         </span>
                                     </a>
                                     <a href="/admin-profile-edit-2.html" class="account-menu-item">
                                         <i class="lnil lnil-file-name"></i>
-                                        <span>Ver Documento 2</span>
+                                        <span>Segundo Documento</span>
                                         <span class="end">
                                             <i aria-hidden="true" class="fas fa-arrow-right"></i>
                                         </span>
                                     </a>
                                     <a href="/admin-profile-edit-3.html" class="account-menu-item is-active">
                                         <i class="lnil lnil-file-name"></i>
-                                        <span>Ver Documento 3</span>
+                                        <span>Tercer Documento</span>
                                         <span class="end">
                                             <i aria-hidden="true" class="fas fa-arrow-right"></i>
                                         </span>
                                     </a>
                                     <a href="/admin-profile-edit-4.html" class="account-menu-item">
                                         <i class="lnil lnil-file-name"></i>
-                                        <span>Ver Documento 4</span>
+                                        <span>Ver Cuarto Documento</span>
                                         <span class="end">
                                             <i aria-hidden="true" class="fas fa-arrow-right"></i>
                                         </span>
@@ -103,13 +103,13 @@ title: Edit profile
                                                     </span>
                                                     <span>Regresar</span>
                                                 </a>
-                                                <button class="button h-button is-primary is-raised" onclick="window.print()">Imprimir</button>
+                                                <button class="button h-button is-primary is-raised" onclick="print()">Imprimir</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-body">
-                                    <iframe type="application/pdf" id="pdfDocument" src="https://docdro.id/pOoCdCW" style="width:100%;height:700px;"></iframe>
+                                    <iframe type="application/pdf" id="pdfDocument" src="http://docdro.id/pOoCdCW" style="width:100%;height:700px;"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -125,14 +125,10 @@ title: Edit profile
 </div>
 
 <script>
-    function printDocument(documentId) {
-    var doc = document.getElementById(documentId);
-
-    //Wait until PDF is ready to print    
-    if (typeof doc.print === 'undefined') {    
-        setTimeout(function(){printDocument(documentId);}, 1000);
-    } else {
-        doc.print();
-    }
-}
+     function print() {
+         var objFra = document.getElementById('pdfDocument');
+         objFra.contentWindow. postMessage (true, '*');
+         objFra.contentWindow.focus();
+         objFra.contentWindow.print();
+     }
 </script>

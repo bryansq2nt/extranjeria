@@ -1,11 +1,12 @@
 {
-  "name": "huro",
-  "version": "1.7.0",
-  "description": "Huro Quickstart",
+  "name": "extranjeria",
+  "version": "0.1.0",
+  "description": "Demo",
   "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "start": "gulp dev"
   },
   "author": "Css Ninja",
   "license": "MIT",
