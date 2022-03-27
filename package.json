@@ -76,5 +76,8 @@
     "slick-carousel": "1.8.1",
     "vivus": "0.4.6",
     "webui-popover": "1.2.18"
+  },
+  "engines": {
+    "node": "14.15.1"
   }
 }
