@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "start":"node node_modules/gulp/bin/gulp build",
     "poststart": "npm prune --production"
   },
   "author": "Css Ninja",
