@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "start": "node app",
-    "postinstall": "gulp default"
+    "poststart": "npm prune --production"
   },
   "author": "Css Ninja",
   "license": "MIT",
